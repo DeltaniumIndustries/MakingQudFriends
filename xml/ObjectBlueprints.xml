@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <object Name="Autovalet" Inherits="BaseRobot">
+    <part Name="Physics" Conductivity="1" IsReal="true" Takeable="true" Weight="30" />
+    <part Name="Body" Anatomy="BipedalRobot" />
+    <part Name="DroidScramblerWeakness" />
+    <part Name="Render" DisplayName="&amp;cautovalet" RenderString="2" ColorString="&amp;c" Tile="Creatures/autovalet.png" DetailColor="K" />
+    <part Name="Brain" Hostile="false" Factions="Newly Sentient Beings-50"/>
+    <part Name="acegiak_PocketFriend" />
+    <stat Name="Level" Value="12"></stat>
+    <stat Name="Strength" Value="22"></stat>
+    <stat Name="Agility" Value="19"></stat>
+    <stat Name="Toughness" Value="22"></stat>
+    <stat Name="Intelligence" Value="12"></stat>
+    <stat Name="Willpower" Value="12"></stat>
+    <stat Name="Ego" Value="12"></stat>
+    <stat Name="Hitpoints" Value="100"></stat>
+    <part Name="Description" Short="A man-sized cylinder stands on two mechanical legs." />
+    <tag Name="SimpleConversation" Value="&amp;w*soft whirring*&amp;y" />
+    <part Name="TinkerItem" Bits="0045" CanDisassemble="true" CanBuild="true" CanRepair="true" />
+    <tag Name="Mods" Value="RobotMods,CommonMods" />
+  </object>
+
+  <object Name="Atusa" Inherits="BaseHumanoid">
+    <part Name="Render" DisplayName="Atusa, Botmother" Tile="Creatures/Atusa.png" ColorString="&amp;Y" DetailColor="g"></part>
+    <stat Name="Level" Value="20"></stat>
+    <stat Name="Strength" Value="12"></stat>
+    <stat Name="Agility" Value="20"></stat>
+    <stat Name="Toughness" Value="16"></stat>
+    <stat Name="Intelligence" Value="26"></stat>
+    <stat Name="Willpower" Value="20"></stat>
+    <stat Name="Ego" Value="20"></stat>
+    <stat Name="Hitpoints" Value="60"></stat>
+    <part Name="ConversationScript" ConversationID="acegiak_Atusa" />
+    <inventoryobject Blueprint="Ceremonial Khopesh" Number="1"></inventoryobject>
+    <inventoryobject Blueprint="Cloth Robe" Number="1"></inventoryobject>
+    <inventoryobject Blueprint="Borderlands Revolver" Number="1"></inventoryobject>
+    <inventoryobject Blueprint="Lead Slug" Number="16"></inventoryobject>
+    <tag Name="InventoryPopulationTable" Value="AtusaMerchant" />
+    <part Name="Brain" Hostile="false" Wanders="false" Factions="Pariahs-100"></part>
+    <part Name="GivesRep"></part>
+    <builder Name="acegiak_AtusaWares" />
+    <xtagWaterRitual NoJoin="true" SellSkill="false" SellBlueprints="true" numRecipes="1"></xtagWaterRitual>
+    <xtagGrammar Proper="true"></xtagGrammar>
+    <skill Name="ShortBlades_Jab"></skill>
+    <skill Name="ShortBlades"></skill>
+    <skill Name="Pistol"></skill>
+    <mutation Name="Psychometry" Level="5"></mutation>
+    <intproperty Name="CanRecharge" Value="1" />
+    <intproperty Name="CanRepair" Value="1" />
+    <intproperty Name="CanIdentify" Value="3" />
+    <part Name="Description" Short="A hunched figure, dressed in a ragged sacks, manipulates blinking machinery in blistered hands."></part>
+    <part Name="AISelfPreservation" Threshold="60" />
+    <tag Name="Gender" Value="female" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <tag Name="NoHateFactions" Value="Wardens,Mechanimists,Barathrumites" />
+    <property Name="Role" Value="NPC" />
+    <tag Name="AllowIdleBehavior" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+
+  <object Name="Corpse" Load="Merge">
+    <tag Name="Mods" Value="RobotMods,CommonMods" />
+  </object>
+  <object Name="Creature" Load="Merge">
+    <part Name="acegiak_Zombable" />
+  </object>
+
+  <object Name="acegiak_Awoken" Inherits="Creature">
+    <inventoryobject Blueprint="Small Stone" Number="1" />
+  </object>
+
+  <object Name="Atusa" Load="Merge">
+    <inventoryobject Blueprint="mod:acegiak_ModTreaded" Number="3-12" />
+  </object>
+  <object Name="Atusa" Load="Merge">
+    <inventoryobject Blueprint="mod:acegiak_ModHandy" Number="3-12" />
+  </object>
+  <object Name="Atusa" Load="Merge">
+    <inventoryobject Blueprint="mod:acegiak_ModAwoken" Number="3-12" />
+  </object>
+  <object Name="Atusa" Load="Merge">
+    <inventoryobject Blueprint="mod:acegiak_ModPlated" Number="3-12" />
+  </object>
+  <object Name="Atusa" Load="Merge">
+    <inventoryobject Blueprint="Autovalet" Number="2-4" />
+  </object>
+
+</objects>

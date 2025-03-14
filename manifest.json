@@ -1,0 +1,10 @@
+{
+	"id": "MakingQudFriends",
+	"loadorder": 1,
+	"title": "Making Qud Friends (1.0 Fix)",
+	"description": "Make your own friends with tinkering! Construct an Autovalet and mod it to give it treads or arms! \n\n\nThis mod has had work done to enable it to function with Release 1.0. All attempts to retain all original functionality have been made, but the updating author provides no support. -LL",
+	"tags": "tinkering,robots,npcs",
+	"version": "2.0.0",
+	"author": "{{glotrot|LunarLaurus}}",
+	"previewImage": "preview.png"
+}

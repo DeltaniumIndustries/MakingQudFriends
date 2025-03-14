@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+    <population Name="AtusaMerchant">
+        <group Name="Items" Style="pickeach">
+            <table Name="Junk 1" Number="5-7"/>
+            <table Name="Junk 2" Number="5-7" />
+            <table Name="Junk 3" Number="5-7"/>
+            <table Name="Junk 4" Number="5-7"/>
+            <table Name="Scrap 1" Number="6-12" />
+            <table Name="Scrap 2" Number="6-12" />
+            <table Name="Scrap 3" Number="6-12" />
+            <table Name="Cells" Number="1-2" />
+            <object Blueprint="DataDisk" Number="4-6" />
+            <object Blueprint="DataDisk" Number="4-6" />
+            <object Blueprint="Autovalet" Number="2-4" />
+            <object Blueprint="Night-vision Goggles" Number="1" Chance="75" />
+            <object Blueprint="Basic Toolkit" Number="1" />
+            <object Blueprint="Programmable Recoiler" Number="1" Chance="75" />
+        </group>
+    </population>
+</populations>
